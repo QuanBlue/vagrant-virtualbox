@@ -49,3 +49,13 @@ Run shell script in `bootstrap.sh`
 ```ruby
 config.vm.provision :shell, path: "bootstrap.sh"
 ```
+
+## Remove VM and Box
+
+**Remove VM**  
+`vagrant global-status` to get all VM and id  
+`vagrant destroy <id>` to destroy VM with id
+
+**Remove box**  
+`vagrant box list` to get all box  
+`vagrant box remove <name>` to remove box with name
