@@ -1,0 +1,54 @@
+https://www.vagrantup.com/docs/vagrantfile/machine_settings
+
+#Help 
+vagrant init -h
+
+#run
+vagrant up
+
+#Đelete VM
+vagrant destroy
+
+#search images
+https://app.vagrantup.com/boxes/search
+
+davekpatrick/ubuntu-2204
+fasmat/ubuntu2204-desktop
+
+#Box Add
+vagrant box add fasmat/ubuntu2204-desktop
+vagrant box add davekpatrick/ubuntu-2204
+
+#Box list
+vagrant box list
+
+#Box Outdated
+vagrant box outdated --force (Check for updates for all installed boxes and ignore cache interval)
+vagrant box outdated --global (Check for updates for all installed boxes, not just the boxes for the current Vagrant environment)
+
+#Box Prune
+vagrant box prune
+
+#Box Remove
+vagrant box remove davekpatrick/ubuntu-2204
+
+#Box Update
+vagrant box update
+vagrant box update --box
+
+#shutdown
+vagrant halt
+
+#connect
+vagrant ssh
+
+#restart
+vagrant reload
+
+#persistent_storage
+vagrant plugin install vagrant-persistent-storage
+
+#dns
+vagrant plugin install vagrant-dns
+
+vagrant plugin install vagrant-disksize
